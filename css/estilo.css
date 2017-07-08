@@ -1,0 +1,193 @@
+* {
+  font-family: 'Raleway', 'verdana', 'arial', 'tahoma', sans-serif;
+}
+
+p, h3 {
+  font-size: 1em;
+}
+div.container {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.histograma {
+  width: 100%;
+  order: 2;
+  min-height: 550px;
+}
+div.classes {
+  /*margin-left: 2%;*/
+  width: 28%;
+}
+
+div.classes form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.classes label {
+  width: 100%;
+}
+
+div.classes select {
+  width: 100%;
+}
+
+/*@media (max-width: 500px) {
+  div.histograma, div.dados, div.classes {
+    width: 100%;
+  }
+  div.dados {
+    order: 1;
+  }
+  div.histograma {
+    order: 2;
+  }
+  div.classes {
+    order: 3;
+  }
+}*/
+
+div.barra {
+  /*max-height: 100%;*/
+  min-height: 35px;
+  line-height: 50px;
+  background-color: green;
+       /* top right bottom left */
+       /* top/bottom right/left */
+  margin: 10px 0px;
+  text-align: center;
+  /*vertical-align: middle;*/
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 2px 2px black;
+  transition: height 1s ease-out;
+  display: inline-block;
+  margin: 3%;
+  align-self: flex-end;
+}
+
+div.valores p {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+/*
+todo p dentro de uma div com a class notas,
+sendo que p não é o último filho, após ele colocar uma ','
+*/
+div.valores p:not(:last-child)::after {
+  content: ',';
+}
+
+div.header {
+  width: 100%;
+  order: 1;
+}
+form.formvalores {
+  order: 1;
+}
+form.formclasses{
+  order: 2;
+}
+
+div.valores {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.labels, div.barras {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.barras {
+  height: 500px;
+}
+
+div.labels label {
+  margin: 3%;
+  text-align: center;
+}
+
+div.barras {
+  vertical-align: top;
+}
+
+div.diagrama {
+  width: 100%;
+  order: 3;
+}
+
+div.boxplot {
+  width: 100%;
+  height: 550px;
+}
+
+div.boxplot p {
+  margin: 0;
+  color: green;
+}
+
+p.qualtil3, p.mediana {
+  align-self: flex-start;
+}
+
+p.quartil1 {
+  margin-bottom: auto;
+}
+
+div.maximo, div.minimo {
+  width: 20%;
+  min-height: 15%;
+  margin-left: 38%;
+  margin-right: 38%;
+}
+
+div.maximo {
+  border-bottom-style: solid;
+}
+
+div.minimo {
+  border-top-style: solid;
+}
+
+div.intervalocima, div.intervalobaixo {
+  background-color: black;
+  width: 0.5%;
+  margin-left: 47%;
+  margin-right: 47%;
+  min-height: 15%;
+}
+
+div.boxcima, div.boxbaixo {
+  background-color: purple;
+  visibility: visible;
+  width: 10%;
+  margin-left: 43%;
+  margin-right: 43%;
+  min-height: 15%;
+  border-style: hidden;
+}
+
+div.boxcima {
+  border-bottom-style: solid;
+}
+
+select, input {
+  width: 10%;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+
+
+
+
+
+/* */

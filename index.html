@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+       content="width=device-width, initial-scale=1.0">
+    <title>Info + Math</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <form class="formvalores">
+          <label for="valor">valor:</label>
+          <input type="number" id="valor"
+                 name="valor">
+          <button>
+            <i class="fa fa-plus-circle"></i>
+            Adicionar
+          </button>
+        </form>
+        <form class="formclasses">
+          <label for="nome">Classe</label>
+          <input type="text" name="nome" id="nome">
+          <label for="de">entre:</label>
+          <input name="de" id="de">
+          <label for="ate">e:</label>
+          <input type = number id="ate" name="ate" min="0" step="0.1">
+          <button>
+            <i class="fa fa-plus-circle"></i>
+            Adicionar
+          </button>
+          <div class="info">
+            <div class="valores"><h3>Valores: </h3></div>
+            <h3>Média</h3>
+            <div class="media"></div>
+            <h3>Minimo</h3>
+            <div class="menor"></div>
+            <h3>Maximo</h3>
+            <div class="maior"></div>
+            <h3>Amplitude</h3>
+            <div class="amplitude"></div>
+            <h3>Mediana</h3>
+            <div class="mediana"></div>
+            <h3>Desvio padrão</h3>
+            <div class="desvio"></div>
+            <h3>Primeiro quartil</h3>
+            <div class="quartio1"></div>
+            <h3>Terceiro quartil</h3>
+            <div class="quartio3"></div>
+          </div>
+        </form>
+      </div>
+      <div class="histograma">
+        <h2>Histograma</h2>
+        <div class="barras">
+
+        </div>
+        <div class="labels">
+
+        </div>
+      </div>
+      <div class="diagrama">
+        <h2>Diagrama de Caixas</h2>
+        <div class="boxplot">
+          <div class="maximo"><p id="maximo">5</p></div>
+          <div class="intervalocima"></div>
+          <div class="boxcima"><p id="quartil3">4</p></div>
+          <div class="boxbaixo"><p id="mediana">3</p>
+          <p id="quartil1">2</p></div>
+          <div class="intervalobaixo"></div>
+          <div class="minimo"><p id="minimo">1</p></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
